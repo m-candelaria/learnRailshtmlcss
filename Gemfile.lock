@@ -33,12 +33,16 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.5.4)
+    jquery-rails (3.1.5)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     mail (2.2.20)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    pg (0.18.0)
     polyglot (0.3.5)
     rack (1.2.8)
     rack-mount (0.6.14)
@@ -53,6 +57,11 @@ GEM
       activesupport (= 3.0.6)
       bundler (~> 1.0)
       railties (= 3.0.6)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (3.0.6)
       actionpack (= 3.0.6)
       activesupport (= 3.0.6)
@@ -70,8 +79,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jquery-rails
+  pg
   rails (= 3.0.6)
+  rails_12factor
   sqlite3
+
+RUBY VERSION
+   ruby 1.9.2p330
 
 BUNDLED WITH
    1.16.2

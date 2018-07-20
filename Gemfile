@@ -1,11 +1,22 @@
 source 'http://rubygems.org'
 
+#Heroku should use this version of ruby
+ruby '1.9.2'
+
 gem 'rails', '3.0.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+#sqllite3 for develppment and test
+gem 'sqlite3', group: [:development, :test]
 
-gem 'sqlite3'
+gem 'jquery-rails'
+
+#postgres for production database
+gem 'pg', group: :production
+
+#12 factor for heroku
+gem 'rails_12factor', group: :production
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,3 +40,4 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
